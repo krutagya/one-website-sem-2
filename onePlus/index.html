@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="navbar">
@@ -20,19 +21,21 @@
             <button class="login" onclick="dataform()">login and Purchase</button>
         </div>
     </div>
-    <div class="hero-sec1">
-        <div class="hero-img1"><img src="KV_pc2.png" alt=""></div>
+    <div class="hero-sec1 animate" data-aos="slide-right">
+        <div class="hero-img1">
+            <img src="KV_pc2.png" alt="">
+        </div>
         <div class="hero-img1-text">
             <h6>Bass-ed Brilliance</h6>
-            <p>Oneplus<p>
-            <p>Nord Buds 3</p>
+            <p>OnePlus Nord Buds 3</p>
         </div>
         <div class="hero-bottom">
-            <div class="learnmore"><p>Up to 32dB Active Noise Cancellation |</p>
-            <p>2.0 | Up to 43 hrs Playback</p>
-            <button class="button"> Learn more </button></div>
+            <div class="learnmore">
+                <p>Up to 32dB Active Noise Cancellation | 2.0 | Up to 43 hrs Playback</p>
+                <button class="button">Learn More</button>
+            </div>
+        </div>
     </div>
-</div>
 <div class="hero-sec2">
     <div class="hero-img2"><img src="KV_pc_6000x1280.png" alt=""></div>
     <div class="hero-img2-text">
@@ -47,7 +50,7 @@
 </div>
 </div>
 
-<div class="hero-img3-text">
+<div class="hero-img3-text" data-aos="slide-right">
     <div>
     <h6>Perfection at Play</h6>
     <p>Oneplus<p>
@@ -61,7 +64,7 @@
 </div>
 
 
-<div class="hero-img4-text">
+<div class="hero-img4-text" data-aos="slide-right">
     <div>
         <h1>it's time to move</h1>
         <p>OnePlus Watch</p>
@@ -75,7 +78,7 @@
 </div>
 </div>
 
-<div class="hero-img5-text">
+<div class="hero-img5-text" data-aos="slide-right">
         <div class="right-img"><img src="bigcard-pc (1).png" alt=""></div>
         <div class>
             <h1>it's time to move</h1>
@@ -88,8 +91,42 @@
     <button class="button4"> Learn more </button>
 </div>
 </div>
-<script src="index.js">
-    
+<div class="matrix">
+    <div class="row1">
+    <div class="box1">
+        <img src="SecondaryBanner_OnePlusNord4Lite5G_Desktop.png" alt="" >
+        <div class="uppertext"> 
+            <p class="txt">Absurdly Entertaining</p>
+            <h1 class="txt">OnePlus Nord CE4 Lite 5G</h1>
+            <p class="txt">5,500 mAh Battery | 80W SUPERVOOC</p>
+            <p class="txt">120 Hz AMOLED Display | Aqua Touch</p>
+        </div>
+    </div>
+    <div class="box2"><img src="SecondaryBanner_OnePlusNordBuds3_Desktop.png" alt="">
+        <p class="txt">Absurdly Entertaining</p>
+            <h1 class="txt">OnePlus Nord CE4 Lite 5G</h1>
+            <p class="txt">5,500 mAh Battery | 80W SUPERVOOC</p>
+            <p class="txt">120 Hz AMOLED Display | Aqua Touch</p></div>
+    </div>
+    <div class="row2">
+    <div class="box3"><img src="SecondaryBanner_OnePlusPad2_Desktop.png" alt="">
+        <p class="txt">Absurdly Entertaining</p>
+            <h1 class="txt">OnePlus Nord CE4 Lite 5G</h1>
+            <p class="txt">5,500 mAh Battery | 80W SUPERVOOC</p>
+            <p class="txt">120 Hz AMOLED Display | Aqua Touch</p></div>
+    <div class="box4"><img src="SecondaryBanner_OnePlusWatch2R_Desktop.png" alt="">
+        <p class="txt">Absurdly Entertaining</p>
+        <h1 class="txt">OnePlus Nord CE4 Lite 5G</h1>
+        <p class="txt">5,500 mAh Battery | 80W SUPERVOOC</p>
+        <p class="txt">120 Hz AMOLED Display | Aqua Touch</p></div>
+    </div>
+</div>
+<script src="index.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 600
+  });
 </script>
 
 </body>

@@ -222,7 +222,85 @@ body{
 .login{
     padding: 0px 20px 2px 20px;
 }
+.box1{
+    img{
+        height: 300px;
+        width: 500px;
+        margin-top: 1514px;}
+}
+.box1{
+position: relative;
+width: 100%;
+height: 100%;
+padding: 32px;
+box-sizing: border-box;
+}
+.box2{
+    img{
+        height: 300px;
+        width: 500px;
+        margin-top: 1514px;
+    }
+}
+.box2{
+background-color: F8F8F8;
+position: relative;
+width: 100%;
+height: 100%;
+padding: 32px;
+box-sizing: border-box;
+}
+.box3{
+    img{
+        height: 300px;
+        width: 500px;
+    }
+}
+.box3{
+position: relative;
+width: 100%;
+height: 100%;
+padding: 32px;
+box-sizing: border-box;
+background-color: #f8f8f8;
+}
+.box4{
+    img{
+        height: 300px;
+        width: 500px;
+    }
+}
+.box4{
+position: relative;
+width: 100%;
+height: 100%;
+padding: 32px;
+box-sizing: border-box;
+background-color: #f8f8f8;
+}
+.row1{
+    display: flex;
+}
+.row2{
+    display: flex;
+}
+.txt{
+    text-align: center;
+}
+.uppertext{
+    margin-bottom: 100px;
+}
+.animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
+.matrix .row1, .matrix .row2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+}
 /* ---------------------- a form for user------------------------*/
 body {
     font-family: Arial, sans-serif;
@@ -273,3 +351,4 @@ button:hover {
     color: red;
 }
 /* -------------------------------------- */
+

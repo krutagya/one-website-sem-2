@@ -20,6 +20,17 @@
     </form>
     <div id="message" class="message"></div>
 </div>
-<script src="index.js"></script>
+<script src="index.js">
+    document.getElementById('purchase-Form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const skill = document.getElementById('mobile').value;
+    const userData = { name, email, mobile };
+    localStorage.setItem('user', JSON.stringify(userData));
+    alert('Form data saved successfully!');
+    this.reset();
+    });
+</script>
 </body>
 </html>
