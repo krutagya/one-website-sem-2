@@ -322,12 +322,13 @@ h2 {
     padding: 20px;
 }
 input[type="text"], input[type="email"], input[type="tel"] {
-    width: 100%;
-    padding: 0px 200px 20px 100px;
+    width: 130px;
+    padding: 0px 200px 20px 0px;
     margin: 10px 0;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 2px solid #100101;
     color: black;
+    height: 15px;
 }
 button {
     width: 100%;
@@ -349,6 +350,7 @@ button:hover {
 }
 .placeholder{
     color: red;
+    height: 550px;
 }
 /* -------------------------------------- */
 
