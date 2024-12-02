@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OnePlus Phone Purchase</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-<div class="form-container">
-    <h2>Buy OnePlus Phone</h2>
-    <form id="purchase-form" action="index.html">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your Name" required>
-        
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your Email" required>
-        
-        <label for="mobile">Mobile Number:</label>
-        <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number"required>
-        <button type="submit">Submit</button>
-    </form>
-    <div id="message" class="message"></div>
-</div>
-<script>
-    document.getElementById('purchase-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const mobile = document.getElementById('mobile').value;
-    const userData = { name, email, mobile };
-    localStorage.setItem('user', JSON.stringify(userData));
-    if (!name || !email || !mobile) {
-    alert('Please fill out all fields!');
-    return;
-}
-    alert('Form data saved successfully!');
-    this.reset();
-});
-</script>
+    <div class="form-container">
+        <h2>Buy OnePlus Phone</h2>
+        <form id="purchase-form" action="index.html">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="message" class="message"></div>
+        <p id="shivam"></p>
+    </div>
+    <script>
+        document.getElementById('purchase-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const mobile = document.getElementById('mobile').value;
+            const userData = { name, email, mobile };
+            localStorage.setItem('user', JSON.stringify(userData));
+            if (!name || !email || !mobile) {
+                alert('Please fill out all fields!');
+            }
+            setTimeout(() => {
+                // console.log(444);
+                window.location.href = "index.html"
+            }, 4000)
+
+            var cnt = 3;
+            var hello = document.getElementById('shivam');
+            var hlo = setTimeout(() => {
+                cnt--
+                if (cnt > 0) {
+                    hello.textContent = `redirecting in ${cnt}`;
+                    console.log(cnt);
+                }
+                else{
+                    clearInterval(hlo);
+                }
+            }, 1000);
+
+
+            // alert('Form data saved successfully!');
+            this.reset();
+        });
+
+    </script>
 </body>
+
 </html>
